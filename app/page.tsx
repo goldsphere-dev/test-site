@@ -130,7 +130,7 @@ export default function HomePage() {
           </div>
 
           {/* Right */}
-          <div className="hidden lg:block relative">
+          <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg"
@@ -138,8 +138,8 @@ export default function HomePage() {
                 className="w-full h-auto"
               />
             </div>
-            {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-4 border border-border max-w-[200px]">
+            {/* Floating card — desktop only to avoid overflow on mobile */}
+            <div className="hidden lg:block absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-4 border border-border max-w-[200px]">
               <div className="flex gap-0.5 text-brand-red mb-1">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
