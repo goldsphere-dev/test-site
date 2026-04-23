@@ -141,7 +141,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+        <div className="border-t border-white/10 mt-10 pt-6 pb-20 sm:pb-6 flex flex-col items-center gap-2 text-xs text-white/40 text-center">
           <p>
             © {new Date().getFullYear()} Body Alignment Association of South
             Africa. All rights reserved.
