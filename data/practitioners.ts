@@ -247,7 +247,7 @@ export const practitioners: Practitioner[] = [
     facebook:
       "https://www.facebook.com/share/p/s7nMufqCKNdYdobo/",
     image:
-      "https://bodyalignment.co.za/wp-content/uploads/2024/11/Screenshot-2024-11-12-at-22.20.55.png",
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/7-1.png",
     bio: "Widaat Salie is the Body Alignment Association's practitioner on the Garden Route, based in the vibrant town of George. Serving clients across the Southern Cape, Widaat brings warmth, expertise, and a deep commitment to holistic healing. She understands the unique physical demands of life in the Garden Route — from outdoor activities and sport to the everyday stresses of work and family life.\n\nWhen you visit Widaat, she takes time to understand your specific concerns before beginning a thorough hands-on assessment and treatment. Using the Body Alignment technique, she works along the spine and key muscle groups to release the deep-seated tension that causes skeletal misalignment and pain. The treatment is gentle, fully clothed, and requires no medication. Clients in the George area frequently report dramatic improvements in pain, mobility, and overall wellbeing after their first session. Book your first session with Widaat today.",
   },
   {
@@ -321,6 +321,7 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27847069527",
     location: "Ronderbosch East, Crawford",
     region: "cape-town",
+    facebook: "https://www.facebook.com/candice.m.williams.71",
     image: "",
     bio: "Bahia Abrahams is a certified Body Alignment practitioner serving the Ronderbosch East and Crawford communities on the Cape Flats. Bahia is passionate about making effective, non-invasive pain relief accessible in her community. Her warm and approachable nature creates a safe space where clients feel comfortable sharing their concerns and trusting the healing process.\n\nEach session with Bahia begins with a careful postural assessment and a conversation about your symptoms. She then applies the Body Alignment technique, using gentle, sustained pressure to release the deep muscular spasms that cause misalignment and pain. You remain fully clothed throughout and there is no discomfort. Clients regularly leave feeling lighter, freer, and noticeably better than when they arrived. Book your first session with Bahia today.",
   },
@@ -332,7 +333,9 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27846278002",
     location: "Strand",
     region: "helderberg",
-    image: "",
+    facebook: "https://www.facebook.com/profile.php?id=61560329326901",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/20.png",
     bio: "Elmarie Henegan is a certified Body Alignment practitioner based in Strand, in the beautiful Helderberg region. With a caring and attentive approach, Elmarie is committed to helping her clients achieve lasting relief from chronic pain and postural problems. She believes that the body is naturally designed to be pain-free and that Body Alignment gives it the support it needs to return to that state.\n\nA session with Elmarie is relaxed, professional, and results-focused. She assesses your posture and movement before applying targeted stimulation to the muscles that are holding your body in patterns of tension. The treatment is gentle, fully clothed, and completely non-invasive. Whether you are dealing with back pain, neck tension, or the accumulated stress of everyday life, Elmarie has the skill and warmth to guide your recovery. Book your first session with Elmarie today.",
   },
   {
@@ -343,7 +346,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27832988533",
     location: "Wellington (mobile: Paarl)",
     region: "winelands",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/17.png",
     bio: "Jeanne Mitchell practises Body Alignment in Wellington and offers a mobile service to clients in Paarl and the surrounding Winelands. Jeanne's approach is rooted in a genuine desire to help people overcome pain and improve their quality of life without medication or invasive procedures. Her mobile service makes Body Alignment therapy accessible to those who may struggle to travel to a fixed practice.\n\nWith Jeanne, every session starts with an honest conversation about where you are and what you need. She then works methodically through your areas of tension, applying the Body Alignment technique to release the muscular holding patterns that cause misalignment and pain. The treatment is fully clothed and suitable for all ages. Book your first session with Jeanne today.",
   },
   {
@@ -354,7 +358,9 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27824436041",
     location: "Somerset West | Stellenbosch | Tokai",
     region: "helderberg",
-    image: "",
+    facebook: "https://www.facebook.com/BodyAlignmentbyShantelle",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/1-1.png",
     bio: "Shantelle Visser is a versatile Body Alignment practitioner serving clients across Somerset West, Stellenbosch, and Tokai. Her broad coverage means that whether you are in the Helderberg, the Winelands, or the southern suburbs of Cape Town, skilled Body Alignment therapy is within reach. Shantelle is known for her thorough technique and her ability to identify the root causes of pain quickly and accurately.\n\nA session with Shantelle is professional and deeply effective. She takes time to assess your posture and movement patterns before applying gentle, targeted pressure to the key muscle groups along your spine and other areas of tension. The result is a release that allows your skeleton to return to its natural alignment. No medication, no cracking, fully clothed. Book your first session with Shantelle today.",
   },
   {
@@ -365,7 +371,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27829263414",
     location: "Helderberg | Strand",
     region: "helderberg",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/13.png",
     bio: "Ilse Steenkamp is a certified Body Alignment practitioner serving the Helderberg basin and Strand. Ilse brings a methodical and caring approach to every session, taking time to understand each client's history before beginning treatment. She is particularly passionate about helping people who have lived with chronic pain for years discover that relief is possible without surgery or long-term medication.\n\nDuring a session with Ilse, you can expect a thorough postural assessment followed by precise, gentle stimulation of the muscles along your spine and areas of tension. Her technique encourages deep muscular release, allowing the skeletal system to naturally realign. The treatment is fully clothed and non-invasive, and many clients notice a significant improvement from their very first visit. Book your first session with Ilse today.",
   },
   {
@@ -387,7 +394,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27714447876",
     location: "Durbanville",
     region: "cape-town",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/8-1.png",
     bio: "Caryl Desiree is a certified Body Alignment practitioner based in Durbanville in Cape Town's northern suburbs. With an intuitive understanding of the body and a warm, professional manner, Caryl has established herself as a trusted practitioner in the area. She believes that most chronic pain has a structural root cause and that Body Alignment offers one of the most effective and natural paths to lasting relief.\n\nA session with Caryl is thorough and restorative. She begins by assessing your posture and listening carefully to your concerns, then works through the areas of tension using the Body Alignment technique. The gentle, targeted pressure she applies helps release deep muscular holding patterns and allows your body to return to proper alignment. Fully clothed, no medication, no invasive procedures. Book your first session with Caryl today.",
   },
   {
@@ -398,7 +406,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27790935012",
     location: "Somerset West",
     region: "helderberg",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/5-1.png",
     bio: "Chantelle Bannister is a certified Body Alignment practitioner based in Somerset West. Chantelle combines a compassionate, client-centred approach with precise technique to deliver sessions that are both comfortable and genuinely effective. She is passionate about helping people in the Helderberg understand that the pain they have been living with does not have to be permanent.\n\nWhen you book with Chantelle, she will take the time to understand your specific situation before beginning a careful assessment of your posture. She then applies the Body Alignment method to release the deep muscular tension that contributes to your pain. The treatment is gentle, fully clothed, and non-invasive. Most clients leave feeling notably better than when they arrived. Book your first session with Chantelle today.",
   },
   {
@@ -420,7 +429,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27686413097",
     location: "Bergrivier",
     region: "west-coast",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2025/05/Chris-Fick.png",
     bio: "Chris-Fick Van Niekerk serves the Bergrivier community as a certified Body Alignment practitioner on the West Coast. In a rural area where access to specialised healthcare is limited, Chris-Fick provides an invaluable service to local residents seeking effective, non-invasive pain relief close to home. His grounded, practical approach resonates with the hardworking people of the region.\n\nA session with Chris-Fick is focused and effective. He assesses your posture and areas of concern before applying the Body Alignment technique, using gentle but precise pressure to release the deep muscular spasms that cause pain and misalignment. The treatment is fully clothed and requires no medication. Book your first session with Chris-Fick today.",
   },
   {
@@ -442,7 +452,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27647557517",
     location: "Waterfall, Midrand, Johannesburg",
     region: "gauteng",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/4-1.png",
     bio: "Debbie Coltman brings the Body Alignment method to Gauteng, practising from Waterfall in Midrand. As one of the few Body Alignment practitioners in Johannesburg, Debbie provides a uniquely valuable service to clients in the north of the country who may otherwise not have access to this highly effective form of complementary healthcare. Her professional, results-driven approach has attracted clients from across the greater Johannesburg area.\n\nA session with Debbie begins with a thorough assessment of your posture and a conversation about the pain and discomfort you are experiencing. She then applies the Body Alignment technique, using gentle, targeted pressure to release the muscular tension that causes misalignment. The treatment is fully clothed, non-invasive, and effective. Book your first session with Debbie today.",
   },
   {
@@ -453,7 +464,9 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27840778100",
     location: "Edgemead, Northern Suburbs",
     region: "cape-town",
-    image: "",
+    facebook: "https://www.facebook.com/bonnita.connolly",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/12/1.png",
     bio: "Bonnita Connolly is a certified Body Alignment practitioner based in Edgemead in Cape Town's northern suburbs. Bonnita combines a warm, patient manner with skilled technique to create sessions that are both reassuring and highly effective. She is particularly passionate about helping people who have struggled with long-term pain find a path to genuine, lasting relief.\n\nDuring a session with Bonnita, you will be guided through a careful assessment of your posture before she begins the hands-on treatment. Using the Body Alignment method, she applies gentle, sustained pressure to release the deep muscular spasms that cause skeletal misalignment and pain. The treatment is completely non-invasive, you remain fully clothed, and most clients notice a meaningful improvement from the very first session. Book your first session with Bonnita today.",
   },
   {
@@ -464,7 +477,9 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27761567524",
     location: "Strand | Gordon's Bay | Somerset West",
     region: "helderberg",
-    image: "",
+    facebook: "https://www.facebook.com/profile.php?id=61575677325917",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2025/02/BASA-Profile-Picture.png",
     bio: "Wayn Strydom is a certified Body Alignment practitioner serving clients across Strand, Gordon's Bay, and Somerset West. His thorough, professional approach and genuine interest in each client's wellbeing have made him a valued member of the Helderberg Body Alignment community. Wayn is especially effective with clients dealing with the physical effects of physical labour and active lifestyles.\n\nSessions with Wayn are structured and effective. He starts by assessing your posture and identifying the key areas of muscular tension before applying the Body Alignment technique. His precise, gentle stimulation targets the deep muscles that hold the skeleton in dysfunctional patterns, encouraging a natural release and return to proper alignment. Fully clothed, no medication, no discomfort. Book your first session with Wayn today.",
   },
   {
@@ -475,7 +490,9 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27824697474",
     location: "Somerset West",
     region: "helderberg",
-    image: "",
+    facebook: "https://www.facebook.com/justin.j.macgregor",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2025/05/BASA-Profile-Picture-1.png",
     bio: "James MacGregor is a certified Body Alignment practitioner based in Somerset West. As one of the male practitioners in the Body Alignment network, James brings a strong, precise technique alongside a calm and professional approach that clients find immediately reassuring. He is dedicated to helping his clients understand the connection between muscular tension, alignment, and overall health.\n\nA session with James is focused and thorough. After a careful postural assessment, he applies targeted stimulation to the muscles along the spine and in key areas of tension, using the Body Alignment technique to encourage a deep release. The treatment is fully clothed, non-invasive, and effective for a wide range of conditions. Book your first session with James today.",
   },
   {
@@ -487,7 +504,8 @@ export const practitioners: Practitioner[] = [
     location: "Table View | Bloubergstrand",
     region: "west-coast",
     isNew: true,
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2026/01/BASA-Profile-Picture-4.png",
     bio: "Nicky Liebenberg is one of the newest members of the Body Alignment Association of South Africa, serving the Table View and Bloubergstrand communities on Cape Town's Atlantic seaboard. Nicky brings enthusiasm, careful technique, and a deep commitment to client wellbeing to every session. Her decision to train as a practitioner was driven by a passion for holistic health and a desire to help her community find natural, effective pain relief.\n\nAs a newly certified practitioner, Nicky is meticulous and attentive. She takes time with each client to assess their posture and understand their concerns before applying the Body Alignment technique. Her sessions are fully clothed, non-invasive, and focused on releasing the root cause of your pain. Book your first session with Nicky today.",
   },
   {
@@ -498,7 +516,9 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27829007172",
     location: "Somerset West",
     region: "helderberg",
-    image: "",
+    facebook: "https://www.facebook.com/Teamarciabs",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/5-2.png",
     bio: "Marcia Swanepoel is a certified Body Alignment practitioner based in Somerset West. With a nurturing, attentive approach and solid technical grounding, Marcia has established herself as a trusted practitioner in the Helderberg community. She is passionate about the Body Alignment philosophy of treating the root cause of pain rather than simply managing symptoms.\n\nIn a session with Marcia, you will experience a thorough assessment followed by careful, targeted treatment of the muscles contributing to your discomfort. She applies the Body Alignment technique with precision and care, encouraging your body to release the deep muscular tension that causes misalignment and pain. Fully clothed, non-invasive, and effective from the very first session. Book your first session with Marcia today.",
   },
   {
@@ -509,7 +529,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27716713075",
     location: "Gordon's Bay | Strand",
     region: "helderberg",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/33.png",
     bio: "Hazel Burns is a certified Body Alignment practitioner serving Gordon's Bay and Strand. With a gentle, empathetic approach and a thorough understanding of the Body Alignment method, Hazel has become a go-to practitioner for clients in the lower Helderberg area. She believes strongly that the body has an innate ability to heal itself when the obstacles of muscular tension and misalignment are removed.\n\nDuring a session with Hazel, you will be assessed carefully before she begins the hands-on treatment. Using gentle, sustained pressure, she works through the key muscle groups along your spine and other areas of tension, encouraging a natural release and allowing your skeleton to return to proper alignment. The treatment is fully clothed and non-invasive. Book your first session with Hazel today.",
   },
   {
@@ -520,6 +541,7 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27842174186",
     location: "Somerset West",
     region: "helderberg",
+    facebook: "https://www.facebook.com/share/p/zvMFuFynqsxeXyMj/",
     image: "",
     bio: "Ashley Dickson is a certified Body Alignment practitioner based in Somerset West. Ashley combines a focused, professional style with genuine warmth and interest in each client's wellbeing. Trained and certified through the Body Alignment Association of South Africa, Ashley applies the method with precision and care, helping clients in the Helderberg find lasting relief from pain and postural problems.\n\nA session with Ashley is relaxed and results-driven. She begins with a postural assessment and a conversation about your symptoms before applying targeted stimulation to the muscles that are holding your body in patterns of tension. The Body Alignment technique she uses is gentle, non-invasive, and requires no medication. Most clients leave feeling noticeably better after their first visit. Book your first session with Ashley today.",
   },
@@ -531,7 +553,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27845302564",
     location: "Currently abroad",
     region: "international",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/27.png",
     bio: "Maè Jones is a certified Body Alignment practitioner currently practising abroad. Trained and certified by the Body Alignment Association of South Africa, Maè carries the Body Alignment method wherever she goes, making this powerful therapy available to clients outside South Africa. Her calm, intuitive approach and thorough technique have earned her the appreciation of clients across different countries.\n\nSessions with Maè follow the same proven structure as all Body Alignment treatments: a careful postural assessment, followed by targeted stimulation of the deep muscles that cause misalignment and pain. The treatment is fully clothed, non-invasive, and effective. Please contact Maè directly to confirm her current location and availability. Book your session with Maè today.",
   },
   {
@@ -553,7 +576,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27728563345",
     location: "Fish Hoek | Noordhoek",
     region: "cape-town",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/21.png",
     bio: "Sasha Wainwright is a certified Body Alignment practitioner serving the beautiful communities of Fish Hoek and Noordhoek on Cape Town's southern peninsula. Sasha has a calm, grounding presence that puts clients at ease from the moment they arrive. She is drawn to the Body Alignment method for its simplicity, effectiveness, and respect for the body's natural healing capacity.\n\nA session with Sasha is thoughtful and thorough. She takes time to understand your history and assess your posture before beginning the hands-on treatment. Using precise, gentle pressure along the spine and key muscle groups, she helps your body release the deep muscular tension that is causing misalignment and pain. The treatment is fully clothed and non-invasive. Book your first session with Sasha today.",
   },
   {
@@ -575,7 +599,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27834602011",
     location: "Eersteriver",
     region: "cape-town",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/16-1.png",
     bio: "Elias Jacobus Jacobs is a certified Body Alignment practitioner serving the Eersteriver community in the Cape Town metro. Elias is committed to bringing quality, non-invasive pain relief to his community, offering a practical alternative to medication and surgery for those dealing with chronic pain and postural issues. His straightforward, professional approach makes clients feel confident and cared for.\n\nA session with Elias is focused and effective. He begins by assessing your posture and identifying the areas where muscular tension is causing the most disruption, then applies the Body Alignment technique to release those patterns. The treatment is gentle, fully clothed, and requires no medication. Book your first session with Elias today.",
   },
   {
@@ -597,7 +622,8 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27814775465",
     location: "Southern Suburbs",
     region: "cape-town",
-    image: "",
+    image:
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/11.png",
     bio: "Shaheed Adams is a certified Body Alignment practitioner serving Cape Town's Southern Suburbs. With a professional, approachable manner and a genuine commitment to his clients' wellbeing, Shaheed has established himself as a trusted practitioner in the area. He is passionate about helping people understand that chronic pain is not something they simply have to live with.\n\nSessions with Shaheed begin with a thorough postural assessment and a discussion of your symptoms. He then applies the Body Alignment technique, using gentle, targeted pressure to release the deep muscular tension that causes skeletal misalignment and pain. The treatment is fully clothed, non-invasive, and effective from the very first session. Book your first session with Shaheed today.",
   },
   {
@@ -608,8 +634,7 @@ export const practitioners: Practitioner[] = [
     whatsapp: "27676925512",
     location: "Hermanus",
     region: "overberg",
-    image:
-      "https://bodyalignment.co.za/wp-content/uploads/2024/11/38.png",
+    image: "",
     isNew: true,
     bio: "Mari du Toit is a newly certified Body Alignment practitioner based in the beautiful coastal town of Hermanus. Joining the growing Overberg presence of the Body Alignment Association, Mari is passionate about helping locals and visitors alike find relief from the physical toll of everyday life. Her calm, reassuring manner makes every client feel welcome and cared for from the moment they arrive.\n\nA session with Mari is a restorative experience. She begins by understanding your symptoms and assessing your posture, then applies the Body Alignment technique — gentle, targeted pressure on the muscles that are holding your body in patterns of tension and misalignment. The treatment is fully clothed, completely non-invasive, and many clients feel a significant shift after just one session. Whether you are a Hermanus local or visiting the Whale Coast, Mari is here to help you move and feel better. Book your first session with Mari today.",
   },
