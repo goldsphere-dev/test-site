@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Col 1 — Brand */}
-          <div>
+          <div className="text-center sm:text-left">
             <div className="inline-block bg-white rounded-xl px-3 py-1.5 mb-4">
               <img
                 src="/logo.jpg"
@@ -18,7 +18,7 @@ export default function Footer() {
               Facilitates pain relief. A balanced spine means a healthy
               body.
             </p>
-            <div className="flex gap-4 mt-5">
+            <div className="flex gap-4 mt-5 justify-center sm:justify-start">
               <a
                 href="https://www.facebook.com/bodyalignmentbyjanet/"
                 target="_blank"
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
 
           {/* Col 2 — Quick Links */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Quick Links
             </h3>
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
 
           {/* Col 3 — Practitioners */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Practitioners
             </h3>
@@ -95,7 +95,7 @@ export default function Footer() {
           </div>
 
           {/* Col 4 — Contact */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Contact
             </h3>
