@@ -1,47 +1,57 @@
-import Link from "next/link"
-import Image from "next/image"
-import type { Practitioner } from "@/data/practitioners"
+import Link from "next/link";
+import type { Practitioner } from "@/data/practitioners";
 
 export default function PractitionerCard({ p }: { p: Practitioner }) {
   return (
     <Link
       href={`/practitioners/${p.slug}`}
-      className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden flex flex-col"
+      className="group bg-white rounded-2xl shadow-sm hover:shadow-lg border border-border transition-all overflow-hidden flex flex-col"
     >
-      <div className="relative w-full aspect-square bg-emerald-50">
+      <div className="relative w-full aspect-square bg-gray-light overflow-hidden">
         {p.image ? (
-          <Image
+          <img
             src={p.image}
             alt={p.name}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
-            <span className="text-5xl text-emerald-300">
+            <span className="text-5xl text-gray-mid/40 font-bold">
               {p.name.charAt(0)}
             </span>
           </div>
         )}
         {p.isNew && (
-          <span className="absolute top-2 right-2 bg-emerald-600 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
+          <span className="absolute top-3 right-3 bg-brand-red text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
             New
           </span>
         )}
         {p.isRIP && (
-          <span className="absolute top-2 right-2 bg-gray-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
+          <span className="absolute top-3 right-3 bg-gray-mid text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
             In Memoriam
           </span>
         )}
       </div>
 
       <div className="p-4 flex flex-col gap-1 flex-1">
-        <h3 className="font-semibold text-gray-900 group-hover:text-emerald-700 transition-colors">
+        <h3 className="font-semibold text-charcoal group-hover:text-brand-red transition-colors text-sm">
           {p.name}
         </h3>
-        <p className="text-xs text-emerald-700 font-medium">Body Alignment Practitioner</p>
-        <p className="text-sm text-gray-500 mt-1">{p.location}</p>
+        <p className="text-[11px] text-gray-mid flex items-center gap-1">
+          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          {p.location}
+        </p>
+        {p.cell && (
+          <p className="text-[11px] text-gray-mid">{p.cell}</p>
+        )}
+        <span className="mt-2 text-brand-red font-semibold text-xs group-hover:underline">
+          View Profile →
+        </span>
       </div>
     </Link>
-  )
+  );
 }

@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
-import { Geist } from "next/font/google"
-import "./globals.css"
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
-import WhatsAppButton from "@/components/WhatsAppButton"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
-const geist = Geist({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -13,19 +13,34 @@ export const metadata: Metadata = {
     template: "%s | Body Alignment South Africa",
   },
   description:
-    "A balanced spine means a healthy body. Find a Body Alignment practitioner near you in South Africa.",
-  keywords: ["body alignment", "pain relief", "spine", "muscle therapy", "South Africa"],
-}
+    "A balanced spine means a healthy body. Find a certified Body Alignment practitioner near you in South Africa. Non-invasive pain relief — no medication, no surgery.",
+  keywords: [
+    "body alignment",
+    "pain relief",
+    "spine alignment",
+    "muscle therapy",
+    "South Africa",
+    "non-invasive",
+    "back pain",
+    "neck pain",
+    "sciatica",
+    "headaches",
+  ],
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={`${geist.className} h-full`}>
-      <body className="min-h-full flex flex-col bg-white text-gray-900 antialiased">
+    <html lang="en" className={`${inter.className} h-full`}>
+      <body className="min-h-full flex flex-col bg-offwhite text-charcoal antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton number="27826868291" variant="floating" />
       </body>
     </html>
-  )
+  );
 }

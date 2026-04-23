@@ -1,41 +1,37 @@
-import type { Metadata } from "next"
-import PractitionerCard from "@/components/PractitionerCard"
-import { practitioners } from "@/data/practitioners"
+import type { Metadata } from "next";
+import LocationFilter from "@/components/LocationFilter";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Practitioners",
+  title: "Find a Practitioner",
   description:
-    "Find a Body Alignment practitioner near you across South Africa.",
-}
+    "Find a certified Body Alignment practitioner near you. 23+ practitioners across South Africa — Cape Town, Helderberg, Overberg, Winelands, West Coast, Garden Route.",
+};
 
 export default function PractitionersPage() {
-  const active = practitioners.filter((p) => !p.isRIP)
-  const inMemoriam = practitioners.filter((p) => p.isRIP)
-
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">Our Practitioners</h1>
-      <p className="text-gray-500 mb-10">
-        Find a Body Alignment practitioner near you. Click a profile to view contact details,
-        location, and to get in touch directly.
-      </p>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        {active.map((p) => (
-          <PractitionerCard key={p.slug} p={p} />
-        ))}
-      </div>
-
-      {inMemoriam.length > 0 && (
-        <div className="mt-16">
-          <h2 className="text-xl font-semibold text-gray-500 mb-6">In Memoriam</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-            {inMemoriam.map((p) => (
-              <PractitionerCard key={p.slug} p={p} />
-            ))}
-          </div>
+    <>
+      {/* Hero */}
+      <section className="bg-charcoal text-white py-28 px-4">
+        <div className="max-w-4xl mx-auto text-center pt-8">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+            Find a Practitioner Near You
+          </h1>
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+            23 certified practitioners across South Africa. Browse by region,
+            search by name, and book your first session.
+          </p>
         </div>
-      )}
-    </div>
-  )
+      </section>
+
+      {/* Filter + Grid */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-offwhite">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedSection>
+            <LocationFilter />
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
+  );
 }

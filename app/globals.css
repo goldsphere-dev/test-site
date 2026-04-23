@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #111827;
+@theme {
+  --color-charcoal: #3D3D3D;
+  --color-brand-red: #CC2222;
+  --color-red-dark: #A81B1B;
+  --color-red-light: #FFF0F0;
+  --color-offwhite: #FAFAF9;
+  --color-gray-light: #F5F4F2;
+  --color-gray-mid: #9CA3AF;
+  --color-gray-dark: #4B5563;
+  --color-border: #E8E7E5;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #FAFAF9;
+  color: #3D3D3D;
+}
+
+html {
+  scroll-behavior: smooth;
 }
