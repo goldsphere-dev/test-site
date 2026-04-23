@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import LocationFilter from "@/components/LocationFilter";
 import AnimatedSection from "@/components/AnimatedSection";
+import { practitioners } from "@/data/practitioners";
+
+const count = practitioners.filter((p) => !p.isRIP).length;
 
 export const metadata: Metadata = {
   title: "Find a Practitioner",
@@ -28,7 +31,7 @@ export default function PractitionersPage() {
             Find a Practitioner Near You
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            23 certified practitioners across South Africa. Browse by region,
+            {count} certified practitioners across South Africa. Browse by region,
             search by name, and book your first session.
           </p>
         </div>

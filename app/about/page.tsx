@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
+import { practitioners } from "@/data/practitioners";
+
+const count = practitioners.filter((p) => !p.isRIP).length;
 
 export const metadata: Metadata = {
   title: "About",
@@ -124,7 +127,7 @@ export default function AboutPage() {
                 The Body Alignment Association of South Africa (BASA) connects
                 trained practitioners across the country, ensuring consistent
                 standards of care and ongoing professional development. Founded
-                by Janet Yates, the association has grown to include 23+
+                by Janet Yates, the association has grown to include {count}+
                 certified practitioners serving communities from Cape Town to the
                 Garden Route, the Winelands to the West Coast, and
                 internationally in Western Australia.

@@ -123,7 +123,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-gray-mid">
-              <span>✓ 23+ Practitioners</span>
+              <span>✓ {practitioners.filter(p => !p.isRIP).length}+ Practitioners</span>
               <span>✓ South Africa Wide</span>
               <span>✓ No Medication Required</span>
             </div>
@@ -249,7 +249,7 @@ export default function HomePage() {
               Meet Our Practitioners
             </h2>
             <p className="text-gray-mid text-center max-w-xl mx-auto mb-12">
-              23 certified practitioners across South Africa. Find one near
+              {practitioners.filter(p => !p.isRIP).length} certified practitioners across South Africa. Find one near
               you.
             </p>
           </AnimatedSection>

@@ -1,9 +1,10 @@
-"use client";
-
 import AnimatedSection from "./AnimatedSection";
+import { practitioners } from "@/data/practitioners";
+
+const count = practitioners.filter((p) => !p.isRIP).length;
 
 const stats = [
-  { value: "23+", label: "Certified Practitioners" },
+  { value: `${count}+`, label: "Certified Practitioners" },
   { value: "100%", label: "Non-Invasive Treatment" },
   { value: "45 to 60 min", label: "Per Session" },
   { value: "South Africa", label: "Wide Network" },
