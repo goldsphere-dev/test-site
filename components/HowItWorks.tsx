@@ -26,7 +26,7 @@ export default function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal text-center mb-4">
             How a Session Works
           </h2>
-          <p className="text-gray-mid text-center max-w-2xl mx-auto mb-14">
+          <p className="text-gray-dark font-medium text-center max-w-2xl mx-auto mb-14">
             A simple, proven process that delivers results from your very first
             visit.
           </p>

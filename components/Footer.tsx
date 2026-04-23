@@ -15,7 +15,7 @@ export default function Footer() {
             <img
               src="/logo.jpg"
               alt="Body Alignment"
-              className="h-10 w-auto brightness-[10] mb-4"
+              className="h-10 w-auto brightness-0 invert mb-4"
             />
             <p className="text-sm text-white/60 leading-relaxed">
               Facilitates pain relief. A balanced spine means a healthy
@@ -144,7 +144,17 @@ export default function Footer() {
             © {new Date().getFullYear()} Body Alignment Association of South
             Africa. All rights reserved.
           </p>
-          <p>Built for Body Alignment Association of South Africa</p>
+          <p>
+            Built by{" "}
+            <a
+              href="https://www.goldsphere.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white/70 transition-colors underline underline-offset-2"
+            >
+              GoldSphere
+            </a>
+          </p>
         </div>
       </div>
     </footer>

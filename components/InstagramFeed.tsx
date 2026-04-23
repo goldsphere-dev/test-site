@@ -1,26 +1,14 @@
-"use client";
-
-import Script from "next/script";
-
 export default function InstagramFeed() {
   return (
     <div className="w-full">
-      <Script
-        src="https://static.elfsight.com/platform/platform.js"
-        strategy="lazyOnload"
-      />
-      {/* TODO: Replace REPLACE_WITH_WIDGET_ID with actual Elfsight widget ID.
-          Steps:
-          1. Go to elfsight.com and create a free account
-          2. Create an Instagram Feed widget
-          3. Connect @bodyalignment_association
-          4. Copy the widget ID and paste it below */}
-      <div
-        className="elfsight-app-REPLACE_WITH_WIDGET_ID"
-        data-elfsight-app-lazy
-      />
-
-      {/* Dev placeholder — remove when Elfsight widget ID is configured */}
+      {/* Placeholder — replace with Elfsight widget once configured:
+          1. Sign up at elfsight.com
+          2. Create an Instagram Feed widget for @bodyalignment_association
+          3. Copy the widget ID, add it to .env as NEXT_PUBLIC_ELFSIGHT_WIDGET_ID
+          4. Replace this block with:
+             <Script src="https://static.elfsight.com/platform/platform.js" strategy="lazyOnload" />
+             <div className="elfsight-app-YOUR_WIDGET_ID" data-elfsight-app-lazy />
+      */}
       <div className="bg-gray-light rounded-2xl p-10 text-center border border-border">
         <div className="text-4xl mb-3">📸</div>
         <p className="font-semibold text-charcoal mb-1">Instagram Feed</p>

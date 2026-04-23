@@ -26,15 +26,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const showTransparent = isHome && !scrolled && !open;
+  const showTransparent = false;
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        showTransparent
-          ? "bg-transparent"
-          : "bg-white shadow-sm"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm"
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
@@ -58,13 +54,9 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`text-sm font-medium transition-colors relative pb-1 ${
-                    showTransparent
-                      ? active
-                        ? "text-white"
-                        : "text-white/80 hover:text-white"
-                      : active
-                        ? "text-brand-red"
-                        : "text-gray-dark hover:text-charcoal"
+                    active
+                      ? "text-brand-red"
+                      : "text-gray-dark hover:text-charcoal"
                   }`}
                 >
                   {link.label}
@@ -80,22 +72,14 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <Link
           href="/practitioners"
-          className={`hidden lg:inline-flex text-sm font-semibold rounded-xl px-5 py-2.5 transition-all ${
-            showTransparent
-              ? "bg-white text-brand-red hover:bg-red-light"
-              : "bg-brand-red text-white hover:bg-red-dark"
-          }`}
+          className="hidden lg:inline-flex text-sm font-semibold rounded-xl px-5 py-2.5 transition-all bg-brand-red text-white hover:bg-red-dark"
         >
           Find a Practitioner
         </Link>
 
         {/* Mobile hamburger */}
         <button
-          className={`lg:hidden p-2 rounded-md transition-colors ${
-            showTransparent
-              ? "text-white hover:text-white/70"
-              : "text-charcoal hover:text-brand-red"
-          }`}
+          className="lg:hidden p-2 rounded-md transition-colors text-charcoal hover:text-brand-red"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
