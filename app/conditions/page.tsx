@@ -102,7 +102,7 @@ export default function ConditionsPage() {
       {/* Hero */}
       <section className="relative bg-charcoal text-white py-32 px-4 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-40"
+          className="absolute inset-0 opacity-55"
           style={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1400&q=85&fit=crop)",
@@ -110,7 +110,7 @@ export default function ConditionsPage() {
             backgroundPosition: "center",
           }}
         />
-        <div className="absolute inset-0 bg-charcoal/50" />
+        <div className="absolute inset-0 bg-charcoal/45" />
         <div className="relative max-w-4xl mx-auto text-center pt-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Conditions We Treat

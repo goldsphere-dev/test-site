@@ -14,7 +14,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative bg-charcoal text-white py-28 px-4 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-25"
+          className="absolute inset-0 opacity-55"
           style={{
             backgroundImage:
               "url(https://bodyalignment.co.za/wp-content/uploads/2024/11/313396490_522109666596590_475694032180513047_n.jpg)",
@@ -22,7 +22,7 @@ export default function ContactPage() {
             backgroundPosition: "center top",
           }}
         />
-        <div className="absolute inset-0 bg-charcoal/65" />
+        <div className="absolute inset-0 bg-charcoal/45" />
         <div className="relative max-w-4xl mx-auto text-center pt-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">

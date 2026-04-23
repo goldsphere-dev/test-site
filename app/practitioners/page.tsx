@@ -14,7 +14,7 @@ export default function PractitionersPage() {
       {/* Hero */}
       <section className="relative bg-charcoal text-white py-28 px-4 overflow-hidden">
         <div
-          className="absolute inset-0 opacity-25"
+          className="absolute inset-0 opacity-55"
           style={{
             backgroundImage:
               "url(https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg)",
@@ -22,7 +22,7 @@ export default function PractitionersPage() {
             backgroundPosition: "center",
           }}
         />
-        <div className="absolute inset-0 bg-charcoal/60" />
+        <div className="absolute inset-0 bg-charcoal/45" />
         <div className="relative max-w-4xl mx-auto text-center pt-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Find a Practitioner Near You
