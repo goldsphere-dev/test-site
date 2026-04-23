@@ -51,9 +51,19 @@ const reasons = [
 export default function CoursesPage() {
   return (
     <>
-      {/* Hero — dark gradient inspired by the course flyer */}
-      <section className="relative py-32 px-4 overflow-hidden" style={{ background: "linear-gradient(135deg, #1B3A4B 0%, #0D2B38 100%)" }}>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-8">
+      {/* Hero */}
+      <section className="relative py-32 px-4 overflow-hidden bg-charcoal">
+        <div
+          className="absolute inset-0 opacity-55"
+          style={{
+            backgroundImage:
+              "url(https://bodyalignment.co.za/wp-content/uploads/2024/11/279965250_5385755371457189_796099243356844957_n.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div className="absolute inset-0 bg-charcoal/45" />
+        <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-8">
           <div className="text-white">
             <div className="inline-flex items-center gap-2 bg-white/10 text-white text-xs font-semibold rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
               Body Alignment Association of South Africa
