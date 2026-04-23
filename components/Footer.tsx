@@ -1,9 +1,4 @@
 import Link from "next/link";
-import { practitioners } from "@/data/practitioners";
-
-const featured = practitioners
-  .filter((p) => !p.isRIP)
-  .slice(0, 5);
 
 export default function Footer() {
   return (
@@ -75,27 +70,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — Featured Practitioners */}
+          {/* Col 3 — Practitioners */}
           <div>
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Practitioners
             </h3>
             <ul className="space-y-2.5 text-sm">
-              {featured.map((p) => (
-                <li key={p.slug}>
-                  <Link
-                    href={`/practitioners/${p.slug}`}
-                    className="text-white/60 hover:text-white transition-colors"
-                  >
-                    {p.name}
-                  </Link>
-                </li>
-              ))}
               <li>
-                <Link
-                  href="/practitioners"
-                  className="text-brand-red hover:text-white transition-colors font-medium"
-                >
+                <Link href="/practitioners" className="text-white/60 hover:text-white transition-colors">
+                  Find Near You
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses" className="text-white/60 hover:text-white transition-colors">
+                  Become a Practitioner
+                </Link>
+              </li>
+              <li>
+                <Link href="/practitioners" className="text-brand-red hover:text-white transition-colors font-medium">
                   View All →
                 </Link>
               </li>
