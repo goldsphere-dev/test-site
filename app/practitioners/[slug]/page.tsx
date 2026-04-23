@@ -155,23 +155,24 @@ export default async function PractitionerPage({ params }: Props) {
 
       {/* Stats bar */}
       {!p.isRIP && (
-        <section className="bg-charcoal py-5">
-          <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+        <section className="bg-[#2a2a2a] py-8 border-y border-white/10">
+          <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
               { value: "45–60 min", label: "Session" },
               { value: "R750*", label: "Per Session" },
               { value: "100%", label: "Fully Clothed" },
               { value: "Non-Invasive", label: "Treatment" },
             ].map((s) => (
-              <div key={s.label}>
-                <div className="text-brand-red font-bold text-lg">
+              <div key={s.label} className="flex flex-col items-center gap-1">
+                <div className="w-6 h-0.5 bg-brand-red rounded-full mb-1" />
+                <div className="text-white font-bold text-xl">
                   {s.value}
                 </div>
-                <div className="text-white/60 text-xs">{s.label}</div>
+                <div className="text-white/50 text-xs uppercase tracking-wider">{s.label}</div>
               </div>
             ))}
           </div>
-          <p className="text-center text-white/30 text-[10px] mt-2">
+          <p className="text-center text-white/30 text-[10px] mt-4">
             *Pricing may vary. Confirm with practitioner.
           </p>
         </section>
