@@ -158,7 +158,7 @@ export default async function PractitionerPage({ params }: Props) {
         <section className="bg-[#2a2a2a] py-8 border-y border-white/10">
           <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
-              { value: "45–60 min", label: "Session" },
+              { value: "45 to 60 min", label: "Session" },
               { value: "R750*", label: "Per Session" },
               { value: "100%", label: "Fully Clothed" },
               { value: "Non-Invasive", label: "Treatment" },

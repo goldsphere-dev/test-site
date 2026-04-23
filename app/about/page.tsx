@@ -12,7 +12,7 @@ const principles = [
   {
     title: "Root Cause",
     description:
-      "We address the muscular holding patterns that cause skeletal misalignment — not just the symptoms.",
+      "We address the muscular holding patterns that cause skeletal misalignment, not just the symptoms.",
   },
   {
     title: "Non-Invasive",
@@ -63,7 +63,7 @@ export default function AboutPage() {
               <p>
                 In our ever increasing fast-paced and complex lifestyle,
                 sometimes just getting through the day causes stress within the
-                body that we are unaware of — until the accumulated buildup of
+                body that we are unaware of, until the accumulated buildup of
                 stress results in the body feeling pain.
               </p>
               <p>
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 thus impact every function of your body. These hard muscles exert
                 such a pull on the vertebrae and skeletal joints that the bones
                 could subsequently become misaligned. They could also cause wear
-                and tear on the cartilage in between the bones — disintegration,
+                and tear on the cartilage in between the bones, causing disintegration,
                 compressed and herniated discs.
               </p>
               <p>

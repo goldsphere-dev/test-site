@@ -211,10 +211,10 @@ export default function CoursesPage() {
             <blockquote className="text-white text-lg leading-relaxed italic mb-4">
               &ldquo;Training with Janet changed my life. Within 3 months I had
               the skills and confidence to start my own practice. The practical
-              training is exceptional — you treat real clients under supervision
+              training is exceptional. You treat real clients under supervision
               from day one.&rdquo;
             </blockquote>
-            <p className="text-white/50 text-sm">— Graduate, Somerset West</p>
+            <p className="text-white/50 text-sm">Graduate, Somerset West</p>
           </AnimatedSection>
         </div>
       </section>

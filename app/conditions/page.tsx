@@ -42,7 +42,7 @@ const conditions = [
     id: "headaches",
     title: "Headaches & Migraines",
     subtitle: "Often rooted in muscular tension, not medication deficiency",
-    body: "Tension stored in the upper cervical muscles and the base of the skull is a common contributor to recurring headaches — often relieved significantly through realignment. Many clients who have suffered from headaches for years find lasting relief once the underlying muscular tension is addressed rather than masked with painkillers.",
+    body: "Tension stored in the upper cervical muscles and the base of the skull is a common contributor to recurring headaches, often relieved significantly through realignment. Many clients who have suffered from headaches for years find lasting relief once the underlying muscular tension is addressed rather than masked with painkillers.",
     symptoms: [
       "Recurring tension headaches",
       "Migraine with aura",
@@ -55,7 +55,7 @@ const conditions = [
   {
     id: "sciatica",
     title: "Sciatica & Nerve Pain",
-    subtitle: "Pain down the leg — often dramatically relieved",
+    subtitle: "Pain down the leg, often dramatically relieved",
     body: "Pressure on the sciatic nerve from pelvic or lumbar misalignment causes pain, burning, and numbness radiating down the leg. This is one of the most common and debilitating conditions we treat, and it often responds remarkably well to Body Alignment. By releasing the muscular tension in the lower back and pelvis, pressure is taken off the sciatic nerve.",
     symptoms: [
       "Shooting pain down one leg",
@@ -84,7 +84,7 @@ const conditions = [
     id: "posture",
     title: "Poor Posture & Spinal Alignment",
     subtitle: "Structural imbalances that Body Alignment directly addresses",
-    body: "Uneven hips or shoulders, forward head posture, rounded back — these are structural imbalances that Body Alignment directly addresses. Also effective for sports injuries, joint pain, tennis elbow, carpal tunnel, restless legs, and general joint stiffness. By releasing the muscles that hold the skeleton in dysfunctional patterns, your body can return to its natural, balanced state.",
+    body: "Uneven hips or shoulders, forward head posture, rounded back. These are structural imbalances that Body Alignment directly addresses. Also effective for sports injuries, joint pain, tennis elbow, carpal tunnel, restless legs, and general joint stiffness. By releasing the muscles that hold the skeleton in dysfunctional patterns, your body can return to its natural, balanced state.",
     symptoms: [
       "Uneven shoulders or hips",
       "Forward head posture",

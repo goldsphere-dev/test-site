@@ -11,7 +11,7 @@ const faqs: FaqItem[] = [
   {
     question: "What is Body Alignment?",
     answer:
-      "Body Alignment is a South African-developed complementary health technique that promotes the body's natural capacity to heal and realign itself — without medication, surgery, or pain. Through gentle, targeted stimulation, muscles relax and release deep-held tension, allowing the skeletal system to naturally return to proper alignment.",
+      "Body Alignment is a South African-developed complementary health technique that promotes the body's natural capacity to heal and realign itself, without medication, surgery or pain. Through gentle, targeted stimulation, muscles relax and release deep-held tension, allowing the skeletal system to naturally return to proper alignment.",
   },
   {
     question: "What should I expect during my first session?",
@@ -36,7 +36,7 @@ const faqs: FaqItem[] = [
   {
     question: "What conditions can Body Alignment help with?",
     answer:
-      "Body Alignment is effective for a wide range of conditions including back pain, neck and shoulder tension, headaches and migraines, sciatica, poor posture, stress and fatigue, joint pain, sports injuries, and more. It addresses the root cause — muscular tension pulling the skeleton out of alignment — rather than masking symptoms.",
+      "Body Alignment is effective for a wide range of conditions including back pain, neck and shoulder tension, headaches and migraines, sciatica, poor posture, stress and fatigue, joint pain, sports injuries, and more. It addresses the root cause of your pain: muscular tension pulling the skeleton out of alignment, rather than simply masking symptoms.",
   },
   {
     question: "Is Body Alignment covered by medical aid?",

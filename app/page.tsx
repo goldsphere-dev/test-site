@@ -51,7 +51,7 @@ const conditions = [
   {
     id: "sciatica",
     title: "Sciatica & Nerve Pain",
-    description: "Burning, shooting pain down the leg — often dramatically relieved.",
+    description: "Burning, shooting pain down the leg, often dramatically relieved.",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -71,7 +71,7 @@ const conditions = [
   {
     id: "posture",
     title: "Poor Posture",
-    description: "Uneven hips, rounded shoulders, forward head — all treatable.",
+    description: "Uneven hips, rounded shoulders, forward head. All treatable.",
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -105,7 +105,7 @@ export default function HomePage() {
             </h1>
             <p className="text-gray-dark text-lg leading-relaxed max-w-lg mb-8">
               South Africa&apos;s leading network of certified Body Alignment
-              practitioners — helping you heal naturally, without medication or
+              practitioners, helping you heal naturally without medication or
               surgery.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-6">
@@ -150,7 +150,7 @@ export default function HomePage() {
               <p className="text-charcoal font-semibold text-xs">
                 &ldquo;Life-changing treatment!&rdquo;
               </p>
-              <p className="text-gray-mid text-[10px] mt-0.5">— Client, Malmesbury</p>
+              <p className="text-gray-mid text-[10px] mt-0.5">Client, Malmesbury</p>
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function HomePage() {
                   In our fast-paced lifestyle, stress accumulates in the body
                   until it results in pain. Long hours at a computer, driving,
                   poor posture, and emotional trauma can cause muscles to develop
-                  abnormal sustained contractions — known as{" "}
+                  abnormal sustained contractions, known as{" "}
                   <strong className="text-charcoal">hypertonic spasms</strong>.
                 </p>
                 <p>
@@ -249,7 +249,7 @@ export default function HomePage() {
               Meet Our Practitioners
             </h2>
             <p className="text-gray-mid text-center max-w-xl mx-auto mb-12">
-              23 certified practitioners across South Africa — find one near
+              23 certified practitioners across South Africa. Find one near
               you.
             </p>
           </AnimatedSection>

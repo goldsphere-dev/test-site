@@ -5,7 +5,7 @@ import AnimatedSection from "./AnimatedSection";
 const stats = [
   { value: "23+", label: "Certified Practitioners" },
   { value: "100%", label: "Non-Invasive Treatment" },
-  { value: "45–60 min", label: "Per Session" },
+  { value: "45 to 60 min", label: "Per Session" },
   { value: "South Africa", label: "Wide Network" },
 ];
 

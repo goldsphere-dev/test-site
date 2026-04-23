@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "My sciatica is 90% better after just 3 sessions. I had suffered for over two years with no relief — Body Alignment changed my life.",
+      "My sciatica is 90% better after just 3 sessions. I had suffered for over two years with no relief. Body Alignment changed my life.",
     author: "Local client",
     location: "Malmesbury",
   },
