@@ -207,7 +207,7 @@ export default async function PractitionerPage({ params }: Props) {
               {firstName}&apos;s Gallery
             </h2>
           </div>
-          <PractitionerGallery images={galleryImages} name={p.name} />
+          <PractitionerGallery images={galleryImages} name={p.name} portrait={p.image} firstName={firstName} />
         </section>
       )}
 
