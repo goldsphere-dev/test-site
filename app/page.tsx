@@ -21,61 +21,37 @@ const conditions = [
     id: "back-pain",
     title: "Back & Lower Back Pain",
     description: "The most common reason people seek Body Alignment therapy.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2C12 2 9 6 9 10s1.5 4 3 8c1.5 4 3 4 3 4M12 2c0 0 3 4 3 8s-1.5 4-3 8c-1.5 4-3 4-3 4" />
-      </svg>
-    ),
+    icon: <img src="/52.png" alt="Back and hips" className="w-16 h-16 object-contain" />,
   },
   {
     id: "neck-shoulders",
     title: "Neck & Shoulder Tension",
     description: "Desk work, driving, and stress lock up your cervical spine.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4a3 3 0 100-6 3 3 0 000 6zm0 0v4m-4 2l4-2 4 2M4 18h16" />
-      </svg>
-    ),
+    icon: <img src="/51.png" alt="Neck and shoulder" className="w-16 h-16 object-contain" />,
   },
   {
     id: "headaches",
     title: "Headaches & Migraines",
     description: "Often rooted in muscular tension at the base of the skull.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-    ),
+    icon: <img src="/50.png" alt="Headaches" className="w-16 h-16 object-contain" />,
   },
   {
     id: "sciatica",
     title: "Sciatica & Nerve Pain",
     description: "Burning, shooting pain down the leg, often dramatically relieved.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
+    icon: <img src="/54.png" alt="Sciatica and nerve pain" className="w-16 h-16 object-contain" />,
   },
   {
     id: "stress-fatigue",
     title: "Stress & Fatigue",
     description: "Chronic stress stores itself physically in your muscles.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-      </svg>
-    ),
+    icon: <img src="/53.png" alt="Stress and fatigue" className="w-16 h-16 object-contain" />,
   },
   {
     id: "posture",
     title: "Poor Posture",
     description: "Uneven hips, rounded shoulders, forward head. All treatable.",
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-      </svg>
-    ),
+    icon: <img src="/55.png" alt="Poor posture" className="w-16 h-16 object-contain" />,
   },
 ];
 
