@@ -20,6 +20,7 @@ export interface Practitioner {
   image: string;
   isNew?: boolean;
   isRIP?: boolean;
+  isInactive?: boolean;
   bio: string;
 }
 
@@ -51,6 +52,7 @@ export const practitioners: Practitioner[] = [
   {
     slug: "ashley-du-plooy",
     name: "Ashley Du Plooy",
+    isInactive: true,
     title: "Body Alignment Practitioner",
     cell: "+61 491 705 090",
     whatsapp: "61491705090",
@@ -89,6 +91,7 @@ export const practitioners: Practitioner[] = [
   {
     slug: "julie-hellqvist",
     name: "Julie Hellqvist",
+    isInactive: true,
     title: "Body Alignment Practitioner",
     cell: "082 561 7173",
     whatsapp: "27825617173",
@@ -472,6 +475,7 @@ export const practitioners: Practitioner[] = [
   {
     slug: "wayn-strydom",
     name: "Wayn Strydom",
+    isInactive: true,
     title: "Body Alignment Practitioner",
     cell: "076 156 7524",
     whatsapp: "27761567524",
@@ -524,6 +528,7 @@ export const practitioners: Practitioner[] = [
   {
     slug: "hazel-burns",
     name: "Hazel Burns",
+    isInactive: true,
     title: "Body Alignment Practitioner",
     cell: "071 671 3075",
     whatsapp: "27716713075",
@@ -560,6 +565,7 @@ export const practitioners: Practitioner[] = [
   {
     slug: "juanita-marks",
     name: "Juanita Marks",
+    isInactive: true,
     title: "Body Alignment Practitioner",
     cell: "079 501 0731",
     whatsapp: "27795010731",
@@ -617,6 +623,7 @@ export const practitioners: Practitioner[] = [
   {
     slug: "shaheed-adams",
     name: "Shaheed Adams",
+    isInactive: true,
     title: "Body Alignment Practitioner",
     cell: "081 477 5465",
     whatsapp: "27814775465",

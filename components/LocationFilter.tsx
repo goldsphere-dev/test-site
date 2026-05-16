@@ -18,13 +18,14 @@ function shuffle<T>(arr: T[]): T[] {
 export default function LocationFilter() {
   const [activeRegion, setActiveRegion] = useState<Region | "all">("all");
   const [search, setSearch] = useState("");
-  const [active, setActive] = useState(() => practitioners.filter((p) => !p.isRIP));
+  const [active, setActive] = useState(() => practitioners.filter((p) => !p.isRIP && !p.isInactive));
 
   useEffect(() => {
-    setActive(shuffle(practitioners.filter((p) => !p.isRIP)));
+    setActive(shuffle(practitioners.filter((p) => !p.isRIP && !p.isInactive)));
   }, []);
 
   const inMemoriam = useMemo(() => practitioners.filter((p) => p.isRIP), []);
+  const inactive = useMemo(() => practitioners.filter((p) => p.isInactive), []);
 
   const filtered = useMemo(() => {
     let result = active;
@@ -126,15 +127,43 @@ export default function LocationFilter() {
         </div>
       )}
 
-      {/* In Memoriam */}
-      {inMemoriam.length > 0 && activeRegion === "all" && !search.trim() && (
+      {/* Currently Inactive */}
+      {inactive.length > 0 && activeRegion === "all" && !search.trim() && (
         <div className="mt-16 pt-10 border-t border-border">
           <h2 className="text-xl font-semibold text-gray-mid mb-6">
-            In Memoriam
+            Currently Inactive
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 opacity-75">
-            {inMemoriam.map((p) => (
-              <PractitionerCard key={p.slug} p={p} />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {inactive.map((p) => (
+              <div
+                key={p.slug}
+                className="bg-white rounded-2xl shadow-sm border border-border overflow-hidden flex flex-col opacity-50 grayscale"
+              >
+                <div className="relative w-full aspect-square bg-white overflow-hidden">
+                  {p.image ? (
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-5xl text-gray-mid/40 font-bold">{p.name.charAt(0)}</span>
+                    </div>
+                  )}
+                </div>
+                <div className="p-4 flex flex-col gap-1">
+                  <h3 className="font-semibold text-charcoal text-sm">{p.name}</h3>
+                  <p className="text-[11px] text-gray-mid flex items-center gap-1">
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    {p.location}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
