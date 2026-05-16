@@ -45,7 +45,7 @@ export const practitioners: Practitioner[] = [
     region: "helderberg",
     facebook: "https://www.facebook.com/janet.yates.796",
     image:
-      "https://bodyalignment.co.za/wp-content/uploads/2024/11/38.png",
+      "/test.jpg",
     bio: "Janet Yates is the founder, owner, and head trainer of the Body Alignment Association of South Africa. Based in Somerset West in the heart of the Helderberg, Janet has spent years perfecting the Body Alignment method and training a growing network of practitioners across the country. Her deep understanding of the musculoskeletal system, combined with a genuine passion for helping people live pain-free, has made her a trusted name in complementary healthcare.\n\nA session with Janet is thorough, intuitive, and results-driven. She takes time to assess your posture, movement patterns, and areas of tension before applying gentle, targeted stimulation to release the deep muscular holding patterns that cause pain. Many clients report significant relief after their very first visit. Whether you are dealing with chronic back pain, headaches, or the physical toll of everyday stress, Janet provides a warm, professional environment where healing begins. Book your first session with Janet today.",
   },
   {
