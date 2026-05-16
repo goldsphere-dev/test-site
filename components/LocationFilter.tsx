@@ -1,22 +1,30 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { practitioners, regionLabels, type Region } from "@/data/practitioners";
 import PractitionerCard from "./PractitionerCard";
 
 const allRegions = Object.keys(regionLabels) as Region[];
 
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function LocationFilter() {
   const [activeRegion, setActiveRegion] = useState<Region | "all">("all");
   const [search, setSearch] = useState("");
+  const [active, setActive] = useState(() => practitioners.filter((p) => !p.isRIP));
 
-  const active = useMemo(() => {
-    return practitioners.filter((p) => !p.isRIP);
+  useEffect(() => {
+    setActive(shuffle(practitioners.filter((p) => !p.isRIP)));
   }, []);
 
-  const inMemoriam = useMemo(() => {
-    return practitioners.filter((p) => p.isRIP);
-  }, []);
+  const inMemoriam = useMemo(() => practitioners.filter((p) => p.isRIP), []);
 
   const filtered = useMemo(() => {
     let result = active;
