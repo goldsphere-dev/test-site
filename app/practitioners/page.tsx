@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LocationFilter from "@/components/LocationFilter";
 import AnimatedSection from "@/components/AnimatedSection";
+import PractitionerMap from "@/components/PractitionerMap";
 import { practitioners } from "@/data/practitioners";
 
 const count = practitioners.filter((p) => !p.isRIP).length;
@@ -34,6 +35,23 @@ export default function PractitionersPage() {
             {count} certified practitioners across South Africa. Browse by region,
             search by name, and book your first session.
           </p>
+        </div>
+      </section>
+
+      {/* Interactive Map */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-offwhite border-b border-border">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedSection>
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-charcoal mb-1">
+                Practitioners Across South Africa
+              </h2>
+              <p className="text-sm text-gray-mid">
+                Click any pin or name to view contact details and book directly.
+              </p>
+            </div>
+            <PractitionerMap />
+          </AnimatedSection>
         </div>
       </section>
 
