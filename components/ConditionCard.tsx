@@ -16,7 +16,7 @@ export default function ConditionCard({
   return (
     <Link
       href={`/conditions#${id}`}
-      className="group bg-white rounded-2xl border border-border p-6 hover:shadow-lg hover:border-brand-red/30 transition-all flex flex-col gap-3"
+      className="group bg-white rounded-2xl border border-border p-6 hover:shadow-lg hover:border-brand-red/30 transition-all flex flex-col gap-3 items-center text-center"
     >
       <div className="w-16 h-16 flex items-center justify-center shrink-0">
         {icon}
