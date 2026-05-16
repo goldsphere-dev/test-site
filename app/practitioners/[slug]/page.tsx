@@ -5,6 +5,7 @@ import { practitioners } from "@/data/practitioners";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import AnimatedSection from "@/components/AnimatedSection";
 import ConditionPills from "@/components/ConditionPills";
+import PractitionerFaq from "@/components/PractitionerFaq";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -247,6 +248,9 @@ export default async function PractitionerPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {/* FAQ */}
+      {!p.isRIP && <PractitionerFaq practitioner={p} />}
 
       {/* Google Maps */}
       <section className="py-16 px-4 bg-gray-light">
