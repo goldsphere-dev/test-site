@@ -41,74 +41,77 @@ interface Props {
 
 export default function PractitionerTestimonials({ testimonials, firstName }: Props) {
   const items = (testimonials && testimonials.length > 0) ? testimonials : fallbackTestimonials;
-  const [index, setIndex] = useState(0);
+  const perPage = 3;
+  const pageCount = Math.ceil(items.length / perPage);
+  const [page, setPage] = useState(0);
 
-  const prev = () => setIndex((i) => (i - 1 + items.length) % items.length);
-  const next = () => setIndex((i) => (i + 1) % items.length);
+  const prev = () => setPage((p) => (p - 1 + pageCount) % pageCount);
+  const next = () => setPage((p) => (p + 1) % pageCount);
 
-  const t = items[index];
+  const visible = items.slice(page * perPage, page * perPage + perPage);
 
   return (
     <section className="py-16 px-4 bg-charcoal">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl font-bold text-white mb-10 text-center">
           What Clients Say About {firstName}
         </h2>
 
-        <div className="relative">
-          {/* Card */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg min-h-[200px] flex flex-col">
-            <Stars />
-            <p className="text-gray-dark text-base leading-relaxed italic flex-1">
-              &ldquo;{t.quote}&rdquo;
-            </p>
-            <div className="mt-6 pt-5 border-t border-border">
-              <p className="text-charcoal font-semibold text-sm">{t.author}</p>
-              {t.location && (
-                <p className="text-gray-mid text-xs mt-0.5">{t.location}</p>
-              )}
-            </div>
-          </div>
-
-          {/* Arrows */}
-          {items.length > 1 && (
-            <div className="flex items-center justify-between mt-6">
-              <button
-                onClick={prev}
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
-                aria-label="Previous"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-
-              {/* Dots */}
-              <div className="flex gap-2">
-                {items.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setIndex(i)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      i === index ? "bg-white w-5" : "bg-white/30"
-                    }`}
-                    aria-label={`Go to testimonial ${i + 1}`}
-                  />
-                ))}
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {visible.map((t, i) => (
+            <div key={i} className="bg-white rounded-2xl p-7 shadow-lg flex flex-col">
+              <Stars />
+              <p className="text-gray-dark text-sm leading-relaxed italic flex-1">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <div className="mt-5 pt-4 border-t border-border">
+                <p className="text-charcoal font-semibold text-sm">{t.author}</p>
+                {t.location && (
+                  <p className="text-gray-mid text-xs mt-0.5">{t.location}</p>
+                )}
               </div>
-
-              <button
-                onClick={next}
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
-                aria-label="Next"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
             </div>
-          )}
+          ))}
         </div>
+
+        {/* Arrows + dots */}
+        {pageCount > 1 && (
+          <div className="flex items-center justify-between mt-8">
+            <button
+              onClick={prev}
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              aria-label="Previous"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <div className="flex gap-2">
+              {Array.from({ length: pageCount }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setPage(i)}
+                  className={`h-2 rounded-full transition-all ${
+                    i === page ? "bg-white w-5" : "bg-white/30 w-2"
+                  }`}
+                  aria-label={`Page ${i + 1}`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={next}
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              aria-label="Next"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
