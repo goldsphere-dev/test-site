@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { practitioners } from "@/data/practitioners";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ContactForm from "@/components/ContactForm";
 import AnimatedSection from "@/components/AnimatedSection";
 import ConditionPills from "@/components/ConditionPills";
 
@@ -270,26 +269,6 @@ export default async function PractitionerPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Contact form */}
-      {!p.isRIP && (
-        <section className="py-16 px-4 bg-white">
-          <div className="max-w-xl mx-auto">
-            <AnimatedSection>
-              <h2 className="text-2xl font-bold text-charcoal mb-2 text-center">
-                Book a Session with {firstName}
-              </h2>
-              <p className="text-gray-mid text-sm text-center mb-8">
-                Fill in the form below and {firstName} will get back to you
-                shortly.
-              </p>
-              <ContactForm
-                practitionerName={p.name}
-                defaultMessage={`Hi ${firstName}, I'd like to book a Body Alignment session.`}
-              />
-            </AnimatedSection>
-          </div>
-        </section>
-      )}
 
       {/* Sticky mobile bottom bar */}
       {!p.isRIP && p.whatsapp && (
