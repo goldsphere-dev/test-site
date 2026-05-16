@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import AnimatedSection from "@/components/AnimatedSection";
 import ConditionPills from "@/components/ConditionPills";
 import PractitionerFaq from "@/components/PractitionerFaq";
+import PractitionerGallery from "@/components/PractitionerGallery";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -182,6 +183,18 @@ export default async function PractitionerPage({ params }: Props) {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Gallery */}
+      {p.gallery && p.gallery.length > 0 && (
+        <section className="py-16 px-4 bg-offwhite overflow-hidden">
+          <div className="max-w-3xl mx-auto mb-6">
+            <h2 className="text-2xl font-bold text-charcoal">
+              {firstName}&apos;s Gallery
+            </h2>
+          </div>
+          <PractitionerGallery images={p.gallery} name={p.name} />
+        </section>
+      )}
 
       {/* Conditions */}
       {!p.isRIP && (

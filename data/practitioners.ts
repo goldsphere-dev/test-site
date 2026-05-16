@@ -21,6 +21,7 @@ export interface Practitioner {
   isNew?: boolean;
   isRIP?: boolean;
   isInactive?: boolean;
+  gallery?: string[];
   bio: string;
 }
 
@@ -47,6 +48,14 @@ export const practitioners: Practitioner[] = [
     facebook: "https://www.facebook.com/janet.yates.796",
     image:
       "/test.jpeg",
+    gallery: [
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg",
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/279965250_5385755371457189_796099243356844957_n.jpg",
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/317241330_538216218319268_2721070637639036423_n.jpg",
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/317088280_538216131652610_6605356891445382573_n.jpg",
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/316951890_538215728319317_833599577868475642_n.jpg",
+      "https://bodyalignment.co.za/wp-content/uploads/2024/11/313396490_522109666596590_475694032180513047_n.jpg",
+    ],
     bio: "Janet Yates is the founder, owner, and head trainer of the Body Alignment Association of South Africa. Based in Somerset West in the heart of the Helderberg, Janet has spent years perfecting the Body Alignment method and training a growing network of practitioners across the country. Her deep understanding of the musculoskeletal system, combined with a genuine passion for helping people live pain-free, has made her a trusted name in complementary healthcare.\n\nA session with Janet is thorough, intuitive, and results-driven. She takes time to assess your posture, movement patterns, and areas of tension before applying gentle, targeted stimulation to release the deep muscular holding patterns that cause pain. Many clients report significant relief after their very first visit. Whether you are dealing with chronic back pain, headaches, or the physical toll of everyday stress, Janet provides a warm, professional environment where healing begins. Book your first session with Janet today.",
   },
   {
