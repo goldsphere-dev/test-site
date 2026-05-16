@@ -136,8 +136,8 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg"
-                alt="Body Alignment session in progress"
+                src="/NEW IG post size 1080 (3).png"
+                alt="Body Alignment — spine and muscle anatomy"
                 className="w-full h-auto"
               />
             </div>
