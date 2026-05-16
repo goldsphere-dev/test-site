@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Courses",
   description:
-    "Become a certified Body Alignment practitioner. 3-month training course — February and September intakes. R17,800. No previous experience required.",
+    "Become a certified Body Alignment practitioner. 3-month training course — February and September intakes. R17,500. No previous experience required.",
 };
 
 const courseIncludes = [
@@ -123,8 +123,8 @@ export default function CoursesPage() {
           <AnimatedSection>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
               {[
-                { label: "Duration", value: "3 Months" },
-                { label: "Course Fee", value: "R17,800" },
+                { label: "Duration", value: "3 Months", sub: "1 class per week" },
+                { label: "Course Fee", value: "R17,500" },
                 { label: "Location", value: "Somerset West" },
               ].map((detail) => (
                 <div
@@ -137,6 +137,9 @@ export default function CoursesPage() {
                   <p className="text-charcoal font-bold text-2xl">
                     {detail.value}
                   </p>
+                  {"sub" in detail && (
+                    <p className="text-gray-mid text-xs mt-1">{detail.sub}</p>
+                  )}
                 </div>
               ))}
             </div>
@@ -197,25 +200,52 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      {/* Graduate testimonial */}
+      {/* Graduate testimonials */}
       <section className="py-16 px-4 bg-charcoal">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <AnimatedSection>
-            <div className="flex gap-0.5 justify-center text-brand-red mb-4">
-              {[...Array(5)].map((_, i) => (
-                <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <blockquote className="text-white text-lg leading-relaxed italic mb-4">
-              &ldquo;Training with Janet changed my life. Within 3 months I had
-              the skills and confidence to start my own practice. The practical
-              training is exceptional. You treat real clients under supervision
-              from day one.&rdquo;
-            </blockquote>
-            <p className="text-white/50 text-sm">Graduate, Somerset West</p>
+            <h2 className="text-2xl font-bold text-white text-center mb-10">
+              What Our Graduates Say
+            </h2>
           </AnimatedSection>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              {
+                quote: "Training with Janet changed my life. Within 3 months I had the skills and confidence to start my own practice. The practical training is exceptional. You treat real clients under supervision from day one.",
+                author: "Graduate",
+                location: "Somerset West",
+              },
+              {
+                quote: "I had no healthcare background before starting. Janet's teaching style makes every concept clear and practical. I treated my first paying client in week six and never looked back.",
+                author: "Graduate",
+                location: "Cape Town",
+              },
+              {
+                quote: "The small class size made all the difference. You get personal attention from Janet and build real confidence treating clients before the course even ends. Worth every cent.",
+                author: "Graduate",
+                location: "Helderberg",
+              },
+            ].map((t, i) => (
+              <AnimatedSection key={i} delay={i * 0.1}>
+                <div className="bg-white/10 rounded-2xl p-7 flex flex-col h-full">
+                  <div className="flex gap-0.5 text-brand-red mb-4">
+                    {[...Array(5)].map((_, j) => (
+                      <svg key={j} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-white text-sm leading-relaxed italic flex-1">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="mt-5 pt-4 border-t border-white/10">
+                    <p className="text-white font-semibold text-sm">{t.author}</p>
+                    <p className="text-white/50 text-xs mt-0.5">{t.location}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
         </div>
       </section>
 
