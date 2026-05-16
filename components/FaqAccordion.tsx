@@ -60,34 +60,22 @@ export default function FaqAccordion() {
         return (
           <div
             key={i}
-            className={`border rounded-2xl transition-all ${
-              isOpen
-                ? "border-brand-red/20 bg-red-light/30 shadow-sm"
-                : "border-border bg-white hover:border-border"
-            }`}
+            className="border border-border rounded-2xl bg-white transition-all hover:border-gray-mid/30"
           >
             <button
               onClick={() => setOpenIndex(isOpen ? null : i)}
               className="w-full flex items-center justify-between px-6 py-4 text-left"
             >
-              <span className="font-semibold text-charcoal text-sm pr-4">
+              <span className="font-medium text-charcoal text-sm pr-4">
                 {faq.question}
               </span>
-              <svg
-                className={`w-5 h-5 shrink-0 text-brand-red transition-transform duration-200 ${
-                  isOpen ? "rotate-180" : ""
+              <span
+                className={`w-6 h-6 shrink-0 flex items-center justify-center rounded-full border border-border text-gray-mid transition-transform duration-200 text-lg leading-none ${
+                  isOpen ? "rotate-45" : ""
                 }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+                +
+              </span>
             </button>
             {isOpen && (
               <div className="px-6 pb-5">
