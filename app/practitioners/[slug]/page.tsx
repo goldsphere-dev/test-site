@@ -5,6 +5,7 @@ import { practitioners } from "@/data/practitioners";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactForm from "@/components/ContactForm";
 import AnimatedSection from "@/components/AnimatedSection";
+import ConditionPills from "@/components/ConditionPills";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,14 +25,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const conditions = [
-  { id: "back-pain", label: "Back Pain" },
-  { id: "neck-shoulders", label: "Neck & Shoulders" },
-  { id: "headaches", label: "Headaches" },
-  { id: "sciatica", label: "Sciatica" },
-  { id: "stress-fatigue", label: "Stress & Fatigue" },
-  { id: "posture", label: "Poor Posture" },
-];
 
 export default async function PractitionerPage({ params }: Props) {
   const { slug } = await params;
@@ -198,17 +191,7 @@ export default async function PractitionerPage({ params }: Props) {
               <h2 className="text-2xl font-bold text-charcoal mb-6">
                 What {firstName} Can Help With
               </h2>
-              <div className="flex flex-wrap gap-3">
-                {conditions.map((c) => (
-                  <Link
-                    key={c.id}
-                    href={`/conditions#${c.id}`}
-                    className="bg-white border border-border hover:border-brand-red/30 hover:bg-red-light text-charcoal text-sm font-medium px-4 py-2.5 rounded-full transition-all"
-                  >
-                    {c.label}
-                  </Link>
-                ))}
-              </div>
+              <ConditionPills />
             </AnimatedSection>
           </div>
         </section>
