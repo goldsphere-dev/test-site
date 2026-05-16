@@ -129,7 +129,7 @@ export default async function PractitionerPage({ params }: Props) {
                 {p.whatsapp && !p.isRIP && (
                   <WhatsAppButton
                     number={p.whatsapp}
-                    label={`WhatsApp ${firstName}`}
+                    label={`WhatsApp ${firstName} to Book`}
                     message={`Hi ${firstName}, I found you on the Body Alignment website. I'd like to book a session.`}
                   />
                 )}
