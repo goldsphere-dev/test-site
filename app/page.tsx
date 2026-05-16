@@ -268,7 +268,7 @@ export default function HomePage() {
               href="/practitioners"
               className="bg-brand-red hover:bg-red-dark text-white font-semibold rounded-xl px-7 py-3.5 transition-all text-sm inline-block"
             >
-              View All Practitioners →
+              Find a Practitioner Near You →
             </Link>
           </div>
         </div>
