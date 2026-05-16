@@ -2,12 +2,25 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import ContactForm from "@/components/ContactForm";
+import PractitionerGallery from "@/components/PractitionerGallery";
 
 export const metadata: Metadata = {
   title: "Courses",
   description:
     "Become a certified Body Alignment practitioner. 3-month training course — February and September intakes. R17,500. No previous experience required.",
 };
+
+const courseGallery = [
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/Screenshot-2024-11-12-at-22.20.55.png",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/279965250_5385755371457189_796099243356844957_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/317241330_538216218319268_2721070637639036423_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/317088280_538216131652610_6605356891445382573_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/316951890_538215728319317_833599577868475642_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/313396490_522109666596590_475694032180513047_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/15.png",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/38.png",
+];
 
 const courseIncludes = [
   {
@@ -263,6 +276,14 @@ export default function CoursesPage() {
             <ContactForm showIntake />
           </AnimatedSection>
         </div>
+      </section>
+
+      {/* Course gallery */}
+      <section className="py-16 px-4 bg-offwhite overflow-hidden">
+        <div className="max-w-3xl mx-auto mb-6">
+          <h2 className="text-2xl font-bold text-charcoal">Training in Action</h2>
+        </div>
+        <PractitionerGallery images={courseGallery} name="Body Alignment course" />
       </section>
 
       {/* Contact info */}
