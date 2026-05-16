@@ -128,16 +128,17 @@ export default async function PractitionerPage({ params }: Props) {
               {!p.isRIP && (
                 <div className="flex flex-wrap gap-2 mb-6">
                   {[
-                    "45–60 min session",
-                    "From R500*",
-                    "Fully clothed",
-                    "Non-invasive",
+                    { label: "45–60 min session", icon: "⏱" },
+                    { label: "From R500*", icon: "💳" },
+                    { label: "Fully clothed", icon: "✓" },
+                    { label: "Non-invasive", icon: "✓" },
                   ].map((badge) => (
                     <span
-                      key={badge}
-                      className="bg-gray-light border border-border text-charcoal text-xs font-medium px-3 py-1.5 rounded-full"
+                      key={badge.label}
+                      className="inline-flex items-center gap-1.5 bg-white border-2 border-brand-red/20 text-brand-red text-xs font-semibold px-3 py-1.5 rounded-full shadow-sm"
                     >
-                      {badge}
+                      <span className="text-brand-red">{badge.icon}</span>
+                      {badge.label}
                     </span>
                   ))}
                   <p className="w-full text-[10px] text-gray-mid mt-1">*Pricing may vary. Confirm with practitioner.</p>
