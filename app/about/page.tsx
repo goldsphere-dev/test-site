@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
+import GalleryMarquee from "@/components/GalleryMarquee";
 import { practitioners } from "@/data/practitioners";
 
 const count = practitioners.filter((p) => !p.isRIP).length;
@@ -180,25 +181,7 @@ export default function AboutPage() {
               Body Alignment in Practice
             </h2>
           </AnimatedSection>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              "https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg",
-              "https://bodyalignment.co.za/wp-content/uploads/2024/11/279965250_5385755371457189_796099243356844957_n.jpg",
-              "https://bodyalignment.co.za/wp-content/uploads/2024/11/317241330_538216218319268_2721070637639036423_n.jpg",
-              "https://bodyalignment.co.za/wp-content/uploads/2024/11/317088280_538216131652610_6605356891445382573_n.jpg",
-            ].map((src, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="rounded-2xl overflow-hidden shadow-sm aspect-square">
-                  <img
-                    src={src}
-                    alt="Body Alignment session"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
+          <GalleryMarquee />
         </div>
       </section>
 
