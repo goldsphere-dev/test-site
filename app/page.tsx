@@ -92,10 +92,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-red-light text-brand-red text-xs font-semibold rounded-full px-4 py-1.5 mb-6">
+            <div className="inline-flex items-center gap-2 bg-red-light text-brand-red text-xs font-semibold rounded-full px-4 py-1.5 mb-4">
               <span className="w-2 h-2 rounded-full bg-brand-red" />
               Body Alignment Association of South Africa
             </div>
+            <p className="text-3xl sm:text-4xl font-extrabold tracking-tight text-charcoal mb-4">
+              <span className="text-brand-red">BODY</span> ALIGNMENT
+            </p>
             <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold text-charcoal leading-tight mb-6">
               Restore Balance.
               <br />
