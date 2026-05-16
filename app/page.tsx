@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { practitioners } from "@/data/practitioners";
-import PractitionerCard from "@/components/PractitionerCard";
+import PractitionerCarousel from "@/components/PractitionerCarousel";
 import StatsStrip from "@/components/StatsStrip";
 import HowItWorks from "@/components/HowItWorks";
 import ConditionCard from "@/components/ConditionCard";
@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     "South Africa's leading network of certified Body Alignment practitioners. Restore balance, eliminate pain, and reclaim your life — naturally.",
 };
 
-const featured = ["janet-yates", "charne-mcquire", "logan-fitzgibbon", "fatima-noor-chand"];
 
 const conditions = [
   {
@@ -81,10 +80,6 @@ const conditions = [
 ];
 
 export default function HomePage() {
-  const featuredPractitioners = practitioners.filter((p) =>
-    featured.includes(p.slug)
-  );
-
   return (
     <>
       {/* ───── HERO ───── */}
@@ -245,7 +240,7 @@ export default function HomePage() {
       </div>
 
       {/* ───── FEATURED PRACTITIONERS ───── */}
-      <section className="py-20 px-4 bg-offwhite">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
             <h2 className="text-3xl sm:text-4xl font-bold text-charcoal text-center mb-3">
@@ -256,14 +251,8 @@ export default function HomePage() {
               you.
             </p>
           </AnimatedSection>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
-            {featuredPractitioners.map((p, i) => (
-              <AnimatedSection key={p.slug} delay={i * 0.1}>
-                <PractitionerCard p={p} />
-              </AnimatedSection>
-            ))}
-          </div>
-          <div className="text-center">
+          <PractitionerCarousel practitioners={practitioners.filter(p => !p.isRIP)} />
+          <div className="text-center mt-10">
             <Link
               href="/practitioners"
               className="bg-brand-red hover:bg-red-dark text-white font-semibold rounded-xl px-7 py-3.5 transition-all text-sm inline-block"
