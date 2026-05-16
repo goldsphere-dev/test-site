@@ -133,17 +133,6 @@ export default async function PractitionerPage({ params }: Props) {
                     message={`Hi ${firstName}, I found you on the Body Alignment website. I'd like to book a session.`}
                   />
                 )}
-                {p.cell && (
-                  <a
-                    href={`tel:${p.cell.replace(/\s/g, "")}`}
-                    className="flex items-center gap-2 border-2 border-charcoal text-charcoal hover:bg-gray-light font-semibold rounded-xl px-5 py-3 transition-all text-sm w-full justify-center"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Call {firstName}
-                  </a>
-                )}
                 {p.facebook && (
                   <a
                     href={p.facebook}
@@ -333,14 +322,6 @@ export default async function PractitionerPage({ params }: Props) {
           >
             WhatsApp
           </a>
-          {p.cell && (
-            <a
-              href={`tel:${p.cell.replace(/\s/g, "")}`}
-              className="flex-1 bg-charcoal hover:bg-charcoal/90 text-white font-semibold rounded-xl py-3 text-sm text-center transition-all"
-            >
-              Call
-            </a>
-          )}
         </div>
       )}
     </>
