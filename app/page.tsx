@@ -92,13 +92,6 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left */}
           <div>
-            <div className="mb-6">
-              <img
-                src="/logo.jpg"
-                alt="Body Alignment"
-                className="h-16 w-auto"
-              />
-            </div>
             <div className="inline-flex items-center gap-2 bg-red-light text-brand-red text-xs font-semibold rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 rounded-full bg-brand-red" />
               Body Alignment Association of South Africa
