@@ -178,7 +178,7 @@ export default function HomePage() {
           <AnimatedSection>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="https://bodyalignment.co.za/wp-content/uploads/2024/11/313396490_522109666596590_475694032180513047_n.jpg"
+                src="/Head and hands.jpeg"
                 alt="Body Alignment treatment session"
                 className="w-full h-auto"
               />
