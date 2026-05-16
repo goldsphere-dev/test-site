@@ -1,39 +1,18 @@
 "use client";
 
-const testimonials = [
-  {
-    quote: "After the very first session the difference was incredible. I walked in with a stiff neck and walked out standing straight. Absolutely remarkable.",
-    author: "Jacques B.",
-    location: "Malmesbury",
-  },
-  {
-    quote: "My sciatica is 90% better after just 3 sessions. I had suffered for over two years with no relief. Body Alignment changed my life.",
-    author: "Local client",
-    location: "Malmesbury",
-  },
-  {
-    quote: "Janet and her team have saved my life after almost suffering from daily headaches and neck spasms. Instant release after the very 1st session.",
-    author: "Client",
-    location: "Somerset West",
-  },
-  {
-    quote: "I had chronic lower back pain for 6 years. After just two sessions with my practitioner I could finally sleep through the night without pain.",
-    author: "Marié V.",
-    location: "Stellenbosch",
-  },
-  {
-    quote: "I was sceptical at first, but the results speak for themselves. My posture has improved dramatically and the constant tension in my shoulders is gone.",
-    author: "Client",
-    location: "Somerset West",
-  },
-  {
-    quote: "No medication, no surgery, no side effects — just real relief. Body Alignment gave me my life back after years of suffering.",
-    author: "Returning client",
-    location: "Cape Town",
-  },
-];
+import { useEffect, useState } from "react";
+import { getAllTestimonials } from "@/data/testimonials";
 
-const looped = [...testimonials, ...testimonials];
+const allTestimonials = getAllTestimonials();
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 function StarRating() {
   return (
@@ -48,6 +27,14 @@ function StarRating() {
 }
 
 export default function TestimonialsCarousel() {
+  const [items, setItems] = useState(allTestimonials);
+
+  useEffect(() => {
+    setItems(shuffle(allTestimonials));
+  }, []);
+
+  const looped = [...items, ...items];
+
   return (
     <section className="bg-charcoal py-20 overflow-hidden">
       <style>{`
@@ -56,7 +43,7 @@ export default function TestimonialsCarousel() {
           100% { transform: translateX(-50%); }
         }
         .marquee-track {
-          animation: marquee 28s linear infinite;
+          animation: marquee 36s linear infinite;
         }
         .marquee-track:hover {
           animation-play-state: paused;

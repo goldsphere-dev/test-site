@@ -7,6 +7,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 import ConditionPills from "@/components/ConditionPills";
 import PractitionerFaq from "@/components/PractitionerFaq";
 import PractitionerGallery from "@/components/PractitionerGallery";
+import PractitionerTestimonials from "@/components/PractitionerTestimonials";
+import { practitionerTestimonials } from "@/data/testimonials";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -206,6 +208,14 @@ export default async function PractitionerPage({ params }: Props) {
           </div>
           <PractitionerGallery images={galleryImages} name={p.name} />
         </section>
+      )}
+
+      {/* Testimonials */}
+      {!p.isRIP && (
+        <PractitionerTestimonials
+          testimonials={practitionerTestimonials[p.slug]}
+          firstName={firstName}
+        />
       )}
 
       {/* Conditions */}
