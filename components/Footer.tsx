@@ -7,11 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Col 1 — Brand */}
           <div className="text-center sm:text-left">
-            <div className="inline-block bg-white rounded-xl px-3 py-1.5 mb-4">
+            <div className="inline-block bg-white rounded-xl px-4 py-3 mb-4">
               <img
                 src="/logo.jpg"
                 alt="Body Alignment"
-                className="h-8 w-auto"
+                className="h-20 w-auto"
               />
             </div>
             <p className="text-sm text-white/60 leading-relaxed">

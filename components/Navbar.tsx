@@ -38,7 +38,7 @@ export default function Navbar() {
           <img
             src="/logo.jpg"
             alt="Body Alignment — Facilitates pain relief"
-            className="h-11 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 
