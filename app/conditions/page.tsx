@@ -143,35 +143,39 @@ export default function ConditionsPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Conditions We Treat
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
             Body Alignment addresses the root cause of pain by releasing muscular
             tension that pulls the skeleton out of alignment.
           </p>
-          <div className="max-w-3xl mx-auto text-left bg-white/10 rounded-2xl px-8 py-6 space-y-4">
-            <p className="text-white/90 leading-relaxed">
-              One of the most important things about body mechanics is alignment. Alignment refers to how the head, shoulders, spine, hips and feet line up, relate and communicate with each other, and thus enable the body to function to its maximum potential.
+        </div>
+      </section>
+
+      {/* Alignment intro */}
+      <section className="py-14 px-4 bg-offwhite border-b border-border">
+        <div className="max-w-3xl mx-auto space-y-4">
+          <p className="text-gray-dark leading-relaxed">
+            One of the most important things about body mechanics is alignment. Alignment refers to how the head, shoulders, spine, hips and feet line up, relate and communicate with each other, and thus enable the body to function to its maximum potential.
+          </p>
+          <p className="text-gray-dark leading-relaxed">
+            Proper alignment puts less stress on supporting the body&apos;s posture and the body&apos;s mechanical movements.
+          </p>
+          <div>
+            <p className="text-charcoal text-sm font-semibold uppercase tracking-wider mb-3">
+              Improper alignment may be related to:
             </p>
-            <p className="text-white/90 leading-relaxed">
-              Proper alignment puts less stress on supporting the body&apos;s posture and the body&apos;s mechanical movements.
-            </p>
-            <div>
-              <p className="text-white/70 text-sm font-semibold uppercase tracking-wider mb-3">
-                Improper alignment may be related to:
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Headaches","Dizziness","Shoulder pain","Tennis elbow","Carpal tunnel",
-                  "Lower back pain","Sciatica","Knee and ankle pain","Bone degeneration",
-                  "Herniated discs","Hip pain","IBS","Sinus inflammation","Arthritic pain",
-                ].map((item) => (
-                  <span
-                    key={item}
-                    className="bg-white/20 text-white text-xs font-medium px-3 py-1.5 rounded-full"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Headaches","Dizziness","Shoulder pain","Tennis elbow","Carpal tunnel",
+                "Lower back pain","Sciatica","Knee and ankle pain","Bone degeneration",
+                "Herniated discs","Hip pain","IBS","Sinus inflammation","Arthritic pain",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="bg-white border border-border text-charcoal text-xs font-medium px-3 py-1.5 rounded-full"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </div>
