@@ -46,7 +46,7 @@ const faqs: FaqItem[] = [
   {
     question: "How much does a session cost?",
     answer:
-      "A typical session costs around R750 for 45 to 60 minutes. Pricing may vary slightly between practitioners. Please contact your chosen practitioner directly to confirm their rates.",
+      "Session pricing varies by practitioner, area, and duration. As a general guide, you can expect to pay upwards of R500 for a 45-minute session. Please contact your chosen practitioner directly to confirm their current rates.",
   },
 ];
 
