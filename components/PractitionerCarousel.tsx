@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { Practitioner } from "@/data/practitioners";
 import PractitionerCard from "./PractitionerCard";
 
@@ -16,25 +16,38 @@ function shuffle<T>(arr: T[]): T[] {
 export default function PractitionerCarousel({ practitioners }: { practitioners: Practitioner[] }) {
   const [shuffled, setShuffled] = useState(practitioners);
   const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
   const perPage = 4;
   const total = shuffled.length;
+  const totalPages = Math.ceil(total / perPage);
 
   useEffect(() => {
     setShuffled(shuffle(practitioners));
   }, []);
 
+  // Auto-rotate every 4 seconds, loops back to start, pauses on hover
+  useEffect(() => {
+    if (paused) return;
+    const timer = setInterval(() => {
+      setIndex((i) => {
+        const nextIndex = i + perPage;
+        return nextIndex >= total ? 0 : nextIndex;
+      });
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [paused, total]);
+
   const canPrev = index > 0;
   const canNext = index + perPage < total;
 
   const prev = () => setIndex((i) => Math.max(0, i - perPage));
-  const next = () => setIndex((i) => Math.min(total - perPage, i + perPage));
+  const next = () => setIndex((i) => (i + perPage >= total ? 0 : i + perPage));
 
   const visible = shuffled.slice(index, index + perPage);
   const pageNum = Math.floor(index / perPage) + 1;
-  const totalPages = Math.ceil(total / perPage);
 
   return (
-    <div>
+    <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
         {visible.map((p) => (
           <PractitionerCard key={p.slug} p={p} />
