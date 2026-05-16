@@ -97,7 +97,7 @@ export default function HomePage() {
             <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold text-charcoal leading-tight mb-6">
               Restore Balance.
               <br />
-              Eliminate Pain.
+              Ease Pain.
               <br />
               <span className="text-brand-red">Reclaim Your Life.</span>
             </h1>
