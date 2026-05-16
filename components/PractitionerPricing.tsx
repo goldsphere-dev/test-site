@@ -112,7 +112,7 @@ export default function PractitionerPricing({ slug, firstName, whatsapp }: Props
           {/* ── Package ── */}
           {p.showPackage && (
             <div className="bg-charcoal rounded-2xl p-8 flex flex-col shadow-lg relative">
-              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#E8820C] text-white text-[11px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-red text-white text-[11px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
                 Most Popular
               </span>
               <h3 className="text-xl font-semibold text-white text-center mb-4 font-serif italic">
