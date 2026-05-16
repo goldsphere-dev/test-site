@@ -53,6 +53,18 @@ const conditions = [
     description: "Uneven hips, rounded shoulders, forward head. All treatable.",
     icon: <img src="/55.png" alt="Poor posture" className="w-16 h-16 object-contain" />,
   },
+  {
+    id: "elbows-arms",
+    title: "Elbows & Arms",
+    description: "Tennis elbow, golfer's elbow, carpal tunnel — all linked to muscular tension.",
+    icon: <img src="/51.png" alt="Elbows and arms" className="w-16 h-16 object-contain" />,
+  },
+  {
+    id: "knees-ankles",
+    title: "Knees & Ankles",
+    description: "Knee and ankle pain often traces back to hip and pelvic misalignment.",
+    icon: <img src="/54.png" alt="Knees and ankles" className="w-16 h-16 object-contain" />,
+  },
 ];
 
 export default function HomePage() {

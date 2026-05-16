@@ -94,6 +94,34 @@ const conditions = [
     ],
     image: "https://bodyalignment.co.za/wp-content/uploads/2024/11/313396490_522109666596590_475694032180513047_n.jpg",
   },
+  {
+    id: "elbows-arms",
+    title: "Elbows & Arms",
+    subtitle: "From tennis elbow to carpal tunnel — rooted in muscular tension",
+    body: "Muscular tension in the upper back, shoulder, and neck can refer pain down the arm into the elbow, wrist, and hand. Conditions like tennis elbow, golfer's elbow, and carpal tunnel syndrome often have a strong postural component that Body Alignment addresses directly. By releasing the holding patterns in the shoulder girdle and cervical spine, referred pain and inflammation in the elbow and arm can resolve naturally without the need for cortisone injections or surgery.",
+    symptoms: [
+      "Tennis elbow or golfer's elbow",
+      "Carpal tunnel syndrome",
+      "Wrist or forearm pain",
+      "Tingling or numbness in hands",
+      "Restricted arm or elbow movement",
+    ],
+    image: "https://bodyalignment.co.za/wp-content/uploads/2024/11/15.png",
+  },
+  {
+    id: "knees-ankles",
+    title: "Knees & Ankles",
+    subtitle: "Lower limb pain that begins in the pelvis and spine",
+    body: "Knee and ankle pain are frequently caused by postural imbalances higher up the kinetic chain. Pelvic tilt, hip rotation, and lumbar misalignment all affect how load is distributed through the knees and ankles. Body Alignment targets these root causes rather than just the symptomatic joint, providing lasting relief by restoring balance throughout the entire musculoskeletal system.",
+    symptoms: [
+      "Chronic knee ache or stiffness",
+      "Ankle instability or pain",
+      "Pain on stairs or inclines",
+      "Knee tracking issues",
+      "Hip-to-knee referred pain",
+    ],
+    image: "https://bodyalignment.co.za/wp-content/uploads/2024/11/317241330_538216218319268_2721070637639036423_n.jpg",
+  },
 ];
 
 export default function ConditionsPage() {
