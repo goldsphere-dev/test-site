@@ -27,12 +27,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 
+const placeholderGallery = [
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/313409492_522109719929918_958326532651567349_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/279965250_5385755371457189_796099243356844957_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/317241330_538216218319268_2721070637639036423_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/317088280_538216131652610_6605356891445382573_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/316951890_538215728319317_833599577868475642_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/313396490_522109666596590_475694032180513047_n.jpg",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/15.png",
+  "https://bodyalignment.co.za/wp-content/uploads/2024/11/38.png",
+];
+
 export default async function PractitionerPage({ params }: Props) {
   const { slug } = await params;
   const p = practitioners.find((pr) => pr.slug === slug);
   if (!p) notFound();
 
   const firstName = p.name.split(" ")[0];
+  const galleryImages = (p.gallery && p.gallery.length > 0) ? p.gallery : placeholderGallery;
 
   return (
     <>
@@ -185,14 +197,14 @@ export default async function PractitionerPage({ params }: Props) {
       </section>
 
       {/* Gallery */}
-      {p.gallery && p.gallery.length > 0 && (
+      {!p.isRIP && (
         <section className="py-16 px-4 bg-offwhite overflow-hidden">
           <div className="max-w-3xl mx-auto mb-6">
             <h2 className="text-2xl font-bold text-charcoal">
               {firstName}&apos;s Gallery
             </h2>
           </div>
-          <PractitionerGallery images={p.gallery} name={p.name} />
+          <PractitionerGallery images={galleryImages} name={p.name} />
         </section>
       )}
 
