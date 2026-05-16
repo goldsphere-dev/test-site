@@ -1,0 +1,12 @@
+name = "goldsphere-form-relay"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Custom domain — set this up in Cloudflare dashboard after deploying
+# routes = [{ pattern = "forms.goldsphere.co.za", custom_domain = true }]
+
+# Secrets are set via dashboard or CLI — never store values here:
+#   wrangler secret put RESEND_API_KEY
+#   wrangler secret put API_KEY
+#   wrangler secret put ALLOWED_ORIGINS
+#   wrangler secret put FROM_EMAIL
