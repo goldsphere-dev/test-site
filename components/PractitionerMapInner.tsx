@@ -8,9 +8,18 @@ import Link from "next/link";
 import { practitioners } from "@/data/practitioners";
 import { practitionerCoords } from "@/data/practitionerCoords";
 
-const mapPractitioners = practitioners.filter(
+const allMapPractitioners = practitioners.filter(
   (p) => !p.isRIP && !p.isInactive && practitionerCoords[p.slug]
 );
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 function createPin(highlighted: boolean) {
   return L.divIcon({
@@ -41,8 +50,13 @@ function FlyTo({ slug }: { slug: string | null }) {
 
 export default function PractitionerMapInner() {
   const [selected, setSelected] = useState<string | null>(null);
+  const [mapPractitioners, setMapPractitioners] = useState(allMapPractitioners);
   const markerRefs = useRef<Record<string, L.Marker>>({});
   const listRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMapPractitioners(shuffle(allMapPractitioners));
+  }, []);
 
   function selectPractitioner(slug: string) {
     setSelected(slug);
