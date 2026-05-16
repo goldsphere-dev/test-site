@@ -8,6 +8,7 @@ import ConditionPills from "@/components/ConditionPills";
 import PractitionerFaq from "@/components/PractitionerFaq";
 import PractitionerGallery from "@/components/PractitionerGallery";
 import PractitionerTestimonials from "@/components/PractitionerTestimonials";
+import PractitionerPricing from "@/components/PractitionerPricing";
 import { practitionerTestimonials } from "@/data/testimonials";
 
 interface Props {
@@ -216,6 +217,11 @@ export default async function PractitionerPage({ params }: Props) {
           testimonials={practitionerTestimonials[p.slug]}
           firstName={firstName}
         />
+      )}
+
+      {/* Pricing */}
+      {!p.isRIP && (
+        <PractitionerPricing slug={p.slug} firstName={firstName} whatsapp={p.whatsapp} />
       )}
 
       {/* Conditions */}
