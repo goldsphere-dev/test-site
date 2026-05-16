@@ -124,6 +124,26 @@ export default async function PractitionerPage({ params }: Props) {
                 )}
               </div>
 
+              {/* Info badges */}
+              {!p.isRIP && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {[
+                    "45–60 min session",
+                    "From R500*",
+                    "Fully clothed",
+                    "Non-invasive",
+                  ].map((badge) => (
+                    <span
+                      key={badge}
+                      className="bg-gray-light border border-border text-charcoal text-xs font-medium px-3 py-1.5 rounded-full"
+                    >
+                      {badge}
+                    </span>
+                  ))}
+                  <p className="w-full text-[10px] text-gray-mid mt-1">*Pricing may vary. Confirm with practitioner.</p>
+                </div>
+              )}
+
               {/* Contact actions */}
               <div className="space-y-3">
                 {p.whatsapp && !p.isRIP && (
@@ -152,30 +172,6 @@ export default async function PractitionerPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Stats bar */}
-      {!p.isRIP && (
-        <section className="bg-[#2a2a2a] py-8 border-y border-white/10">
-          <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-            {[
-              { value: "45 to 60 min", label: "Session" },
-              { value: "R750*", label: "Per Session" },
-              { value: "100%", label: "Fully Clothed" },
-              { value: "Non-Invasive", label: "Treatment" },
-            ].map((s) => (
-              <div key={s.label} className="flex flex-col items-center gap-1">
-                <div className="w-6 h-0.5 bg-brand-red rounded-full mb-1" />
-                <div className="text-white font-bold text-xl">
-                  {s.value}
-                </div>
-                <div className="text-white/50 text-xs uppercase tracking-wider">{s.label}</div>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-white/30 text-[10px] mt-4">
-            *Pricing may vary. Confirm with practitioner.
-          </p>
-        </section>
-      )}
 
       {/* Bio */}
       <section className="py-16 px-4 bg-white">
