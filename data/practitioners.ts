@@ -45,7 +45,7 @@ export const practitioners: Practitioner[] = [
     region: "helderberg",
     facebook: "https://www.facebook.com/janet.yates.796",
     image:
-      "/test.jpg",
+      "/test.jpeg",
     bio: "Janet Yates is the founder, owner, and head trainer of the Body Alignment Association of South Africa. Based in Somerset West in the heart of the Helderberg, Janet has spent years perfecting the Body Alignment method and training a growing network of practitioners across the country. Her deep understanding of the musculoskeletal system, combined with a genuine passion for helping people live pain-free, has made her a trusted name in complementary healthcare.\n\nA session with Janet is thorough, intuitive, and results-driven. She takes time to assess your posture, movement patterns, and areas of tension before applying gentle, targeted stimulation to release the deep muscular holding patterns that cause pain. Many clients report significant relief after their very first visit. Whether you are dealing with chronic back pain, headaches, or the physical toll of everyday stress, Janet provides a warm, professional environment where healing begins. Book your first session with Janet today.",
   },
   {
@@ -360,7 +360,7 @@ export const practitioners: Practitioner[] = [
     region: "helderberg",
     facebook: "https://www.facebook.com/BodyAlignmentbyShantelle",
     image:
-      "https://bodyalignment.co.za/wp-content/uploads/2024/11/1-1.png",
+      "/test.jpeg",
     bio: "Shantelle Visser is a versatile Body Alignment practitioner serving clients across Somerset West, Stellenbosch, and Tokai. Her broad coverage means that whether you are in the Helderberg, the Winelands, or the southern suburbs of Cape Town, skilled Body Alignment therapy is within reach. Shantelle is known for her thorough technique and her ability to identify the root causes of pain quickly and accurately.\n\nA session with Shantelle is professional and deeply effective. She takes time to assess your posture and movement patterns before applying gentle, targeted pressure to the key muscle groups along your spine and other areas of tension. The result is a release that allows your skeleton to return to its natural alignment. No medication, no cracking, fully clothed. Book your first session with Shantelle today.",
   },
   {
