@@ -7,7 +7,7 @@ export default function PractitionerCard({ p }: { p: Practitioner }) {
       href={`/practitioners/${p.slug}`}
       className="group bg-white rounded-2xl shadow-sm hover:shadow-lg border border-border transition-all overflow-hidden flex flex-col"
     >
-      <div className="relative w-full aspect-square bg-gray-light overflow-hidden">
+      <div className="relative w-full aspect-square bg-white overflow-hidden">
         {p.image ? (
           <img
             src={p.image}
