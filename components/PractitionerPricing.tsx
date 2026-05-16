@@ -44,7 +44,7 @@ function WAButton({
       rel="noopener noreferrer"
       className={`mt-auto flex items-center justify-center gap-2 w-full rounded-full py-3 text-sm font-semibold transition-all ${
         dark
-          ? "bg-white text-[#1E3A2F] hover:bg-white/90"
+          ? "bg-white text-charcoal hover:bg-white/90"
           : "border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white"
       }`}
     >
@@ -111,7 +111,7 @@ export default function PractitionerPricing({ slug, firstName, whatsapp }: Props
 
           {/* ── Package ── */}
           {p.showPackage && (
-            <div className="bg-[#1E3A2F] rounded-2xl p-8 flex flex-col shadow-lg relative">
+            <div className="bg-charcoal rounded-2xl p-8 flex flex-col shadow-lg relative">
               <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#E8820C] text-white text-[11px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
                 Most Popular
               </span>
